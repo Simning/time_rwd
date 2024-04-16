@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,5 +9,177 @@ ul, ol, li {
 
 a {
   text-decoration: none; }
+
+main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/bg_morning.jpg"); }
+  main.morning {
+    background-image: url("/img/bg_morning.jpg"); }
+    main.morning figure {
+      background-image: url("/img/phone_morning.png"); }
+  main.afternoon {
+    background-image: url("/img/bg_afternoon.jpg"); }
+    main.afternoon figure {
+      background-image: url("/img/phone_afternoon.png"); }
+  main.evening {
+    background-image: url("/img/bg_evening.jpg"); }
+    main.evening figure {
+      background-image: url("/img/phone_evening.png"); }
+  main.night {
+    background-image: url("/img/bg_night.jpg"); }
+    main.night figure {
+      background-image: url("/img/phone_night.png"); }
+  main.dark_text header .logo,
+  main.dark_text header #gnb li a,
+  main.dark_text header #sns li i,
+  main.dark_text article p,
+  main.dark_text article em,
+  main.dark_text figure .screen {
+    color: #555; }
+  main .sky_cl01 {
+    position: absolute;
+    top: -100px;
+    left: -50%;
+    opacity: 0;
+    animation: ani 40s linear 20s infinite; }
+  main .sky_cl02 {
+    position: absolute;
+    top: -50px;
+    left: -50%;
+    opacity: 0;
+    animation: ani 40s linear 0s infinite; }
+  main header {
+    width: 90vw;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main header .logo {
+      font: bold 30px/1 'orbitron';
+      color: #fff; }
+    main header #gnb {
+      display: flex; }
+      main header #gnb li {
+        margin: 0 40px; }
+        main header #gnb li a {
+          font: bold 14px/1 'arial';
+          color: #fff; }
+    main header #sns {
+      display: flex; }
+      main header #sns li {
+        margin: 0 10px; }
+        main header #sns li i {
+          font-size: 18px;
+          color: #fff; }
+  main article {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%); }
+    main article p {
+      font: 4vw/1 'orbitron';
+      color: #fff;
+      margin: 0 0 20px; }
+      main article p strong {
+        opacity: .7; }
+    main article em {
+      font: bold 14px/1.2 'arial';
+      color: #fff;
+      letter-spacing: 2px; }
+  main figure {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-30%);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/img/phone_morning.png"); }
+    main figure .screen {
+      width: 540px;
+      height: 300px;
+      position: absolute;
+      top: 100px;
+      left: 130px;
+      font: 60px/300px 'orbitron';
+      color: #fff;
+      text-align: center;
+      overflow: hidden; }
+      main figure .screen .cl01 {
+        width: 600px;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        opacity: 0;
+        animation: ani 40s linear 20s infinite; }
+      main figure .screen .cl02 {
+        width: 700px;
+        position: absolute;
+        top: 5%;
+        left: -50%;
+        opacity: 0;
+        animation: ani 40s linear 0s infinite; }
+      main figure .screen em {
+        position: absolute;
+        top: 100px;
+        left: 80px;
+        line-height: 1;
+        font-size: 20px;
+        opacity: 0; }
+        main figure .screen em.on {
+          opacity: 1; }
+      main figure .screen span {
+        display: inline-block;
+        width: 100px; }
+  main nav {
+    width: 90vw;
+    height: 35px;
+    position: absolute;
+    left: 5vw;
+    bottom: 7vh;
+    display: flex;
+    justify-content: space-between; }
+    main nav span {
+      width: 23%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: 12px/1 'orbitron';
+      color: #fff;
+      letter-spacing: 2px;
+      border: 1px solid #bbb;
+      opacity: .7;
+      transition: .5s; }
+      main nav span.on {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #fff;
+        color: #000;
+        opacity: 1; }
+
+@keyframes ani {
+  0% {
+    left: -50%;
+    opacity: 0; }
+  5% {
+    opacity: .5; }
+  95% {
+    opacity: .5; }
+  100% {
+    left: 80%;
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */
