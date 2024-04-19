@@ -11,34 +11,34 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('../img/bg_morning.jpg');
+  background-image: url('/img/bg_morning.jpg');
 
   &.morning {
-    background-image: url('../img/bg_morning.jpg');
+    background-image: url('/img/bg_morning.jpg');
 
     figure {
-      background-image: url('../img/phone_morning.png');
+      background-image: url('/img/phone_morning.png');
     }
   }
   &.afternoon {
-    background-image: url('../img/bg_afternoon.jpg');
+    background-image: url('/img/bg_afternoon.jpg');
 
     figure {
-      background-image: url('../img/phone_afternoon.png');
+      background-image: url('/img/phone_afternoon.png');
     }
   }
   &.evening {
-    background-image: url('../img/bg_evening.jpg');
+    background-image: url('/img/bg_evening.jpg');
 
     figure {
-      background-image: url('../img/phone_evening.png');
+      background-image: url('/img/phone_evening.png');
     }
   }
   &.night {
-    background-image: url('../img/bg_night.jpg');
+    background-image: url('/img/bg_night.jpg');
 
     figure {
-      background-image: url('../img/phone_night.png');
+      background-image: url('/img/phone_night.png');
     }
   }
   &.dark_text {
